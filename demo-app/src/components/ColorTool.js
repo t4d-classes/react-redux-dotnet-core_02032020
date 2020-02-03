@@ -1,13 +1,6 @@
 import React from 'react';
 
-export const ColorTool = () => {
-
-    const colors = [
-        { id: 1, name: 'red' },
-        { id: 2, name: 'white' },
-        { id: 3, name: 'blue' },
-        { id: 4, name: 'black' },
-    ];
+export const ColorTool = (props) => {
 
     return (
         <>
@@ -15,7 +8,7 @@ export const ColorTool = () => {
                 <h1>Color Tool</h1>
             </header>
             <ul>
-                {colors.map(color =>
+                {props.colors.map(color =>
                     <li key={color.id}>{color.name}</li>)}
             </ul>
         </>
