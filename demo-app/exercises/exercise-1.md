@@ -8,9 +8,11 @@ GitHub [https://github.com/t4d-classes/react-redux-dotnet-core_02032020](https:/
 
 2. In the Car Tool component, please output the following HTML structure:
 
+```html
 <header>
     <h1>Car Tool</h1>
 </header>
+```
 
 3. Import the Car Tool component into `index.js`
 
