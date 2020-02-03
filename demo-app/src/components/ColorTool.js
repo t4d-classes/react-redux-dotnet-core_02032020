@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 
+import { ToolHeader } from './ToolHeader';
+
 export const ColorTool = (props) => {
+
+    const [ colors, setColors ] = useState(props.colors.concat());
 
     const [ colorForm, setColorForm ] = useState({
         name: '',
@@ -14,15 +18,26 @@ export const ColorTool = (props) => {
         });
     };
 
+    const addColor = () => {
+
+        setColors(colors.concat({
+            ...colorForm,
+            id: Math.max(...colors.map(x => x.id), 0) + 1,
+        }));
+
+        setColorForm({
+            name: '', hexcode: '',
+        });
+
+    };
+
     console.log(colorForm);
 
     return (
         <>
-            <header>
-                <h1>Color Tool</h1>
-            </header>
+            <ToolHeader headerText="Color Tool" />
             <ul>
-                {props.colors.map(color =>
+                {colors.map(color =>
                     <li key={color.id}>{color.name}</li>)}
             </ul>
             <form>
@@ -39,6 +54,8 @@ export const ColorTool = (props) => {
                     <input type="text" id="hexcode-input" name="hexcode"
                         value={colorForm.hexcode} onChange={change} />
                 </div>
+
+                <button type="button" onClick={addColor}>Add Color</button>
             </form>
         </>
     );
