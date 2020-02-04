@@ -1,12 +1,14 @@
 import React from 'react';
 
+import { CarEditRow } from './CarEditRow';
 import { CarViewRow } from './CarViewRow';
 
-export const CarTable = (props) => {
-
-  const deleteCar = carId => {
-    props.onDeleteCar(carId);
-  }
+export const CarTable = ({
+  cars,
+  editCarId,
+  onEditCar: editCar,
+  onDeleteCar: deleteCar,
+}) => {
 
   return <table>
     <thead>
@@ -21,9 +23,10 @@ export const CarTable = (props) => {
       </tr>
     </thead>
     <tbody>
-      {props.cars.map(car =>
-        <CarViewRow key={car.id} car={car}
-          onDeleteCar={deleteCar} />)}
+      {cars.map(car => car.id === editCarId
+        ? <CarEditRow key={car.id} car={car} />
+        : <CarViewRow key={car.id} car={car}
+            onEditCar={editCar} onDeleteCar={deleteCar} />)}
     </tbody>
   </table>;
 

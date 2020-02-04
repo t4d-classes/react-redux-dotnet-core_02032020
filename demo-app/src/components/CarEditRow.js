@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-export const CarForm = ({ buttonText, onSubmitCar }) => {
+export const CarEditRow = ({ car, onSaveCar, onCancelCar }) => {
 
   const [carForm, setCarForm] = useState({
-    make: '', model: '', year: 1900, color: '', price: 0,
+    ...car
   });
 
   const change = (e) => {
@@ -15,45 +15,32 @@ export const CarForm = ({ buttonText, onSubmitCar }) => {
     });
   };
 
-  const submitCar = () => {
-
-    onSubmitCar({ ...carForm });
-
-    setCarForm({
-      make: '', model: '', year: 1900, color: '', price: 0,
-    });
-  };
-
-  return <form>
-    <h2>Car Form</h2>
-
-    <div>
-      <label htmlFor="make-input">Make:</label>
+  return <tr>
+    <td>{car.id}</td>
+    <td>
       <input type="text" id="make-input" name="make"
         value={carForm.make} onChange={change} />
-    </div>
-    <div>
-      <label htmlFor="model-input">Model:</label>
+    </td>
+    <td>
       <input type="text" id="model-input" name="model"
         value={carForm.model} onChange={change} />
-    </div>
-    <div>
-      <label htmlFor="year-input">Year:</label>
+    </td>
+    <td>
       <input type="number" id="year-input" name="year"
         value={carForm.year} onChange={change} />
-    </div>
-    <div>
-      <label htmlFor="color-input">Color:</label>
+    </td>
+    <td>
       <input type="text" id="color-input" name="color"
         value={carForm.color} onChange={change} />
-    </div>
-    <div>
-      <label htmlFor="price-input">Price:</label>
+    </td>
+    <td>
       <input type="number" id="price-input" name="price"
         value={carForm.price} onChange={change} />
-    </div>
-
-    <button type="button" onClick={submitCar}>{buttonText}</button>
-  </form>;
+    </td>
+    <td>
+      <button type="button" onClick={() => null}>Save</button>
+      <button type="button" onClick={() => null}>Cancel</button>
+    </td>
+  </tr>;
 
 };
