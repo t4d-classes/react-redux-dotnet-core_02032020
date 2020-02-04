@@ -16,7 +16,8 @@ export const CarTable = (props) => {
       </tr>
     </thead>
     <tbody>
-      {props.cars.map(car => <CarViewRow key={car.id} car={car} />)}
+      {props.cars.map(car =>
+        <CarViewRow key={car.id} car={car} />)}
     </tbody>
   </table>;
 
