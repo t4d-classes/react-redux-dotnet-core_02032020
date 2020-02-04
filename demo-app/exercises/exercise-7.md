@@ -4,7 +4,7 @@ GitHub [https://github.com/t4d-classes/react-redux-dotnet-core_02032020](https:/
 
 ## Steps
 
-1. Move the Car Form to its own component. Configure the Car Form component to output the collected car data and configure the button text to customizable.
+1. Move the Car Form to its own component. Configure the Car Form component to output the collected car data  then display it in the table. Also, configure the button text to customizable.
 
 2. Add a new column to the header of the table. Label the column as "Actions".
 
