@@ -14,6 +14,6 @@ GitHub [https://github.com/t4d-classes/react-redux-dotnet-core_02032020](https:/
 
 5. Utilize the Car View Row component within Car Table.
 
-6. Move the color list to a new component named Color List.
+6. Move the color list from Color Tool to a new component named Color List. Then utilize the new Color List component within Color Tool.
 
 7. Ensure it all works!

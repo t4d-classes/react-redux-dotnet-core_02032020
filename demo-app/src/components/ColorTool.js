@@ -31,8 +31,6 @@ export const ColorTool = (props) => {
 
     };
 
-    console.log(colorForm);
-
     return (
         <>
             <ToolHeader headerText="Color Tool" />
