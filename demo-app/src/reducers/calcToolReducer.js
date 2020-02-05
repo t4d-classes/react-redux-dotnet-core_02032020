@@ -12,6 +12,10 @@ export const historyReducer = (state = [], action) => {
     });
   }
 
+  if (action.type === DELETE_ENTRY_ACTION) {
+    return state.filter( (_, i) => i !== action.payload.entryIndex);
+  }
+
   if (action.type === CLEAR_ACTION) {
     return [];
   }
