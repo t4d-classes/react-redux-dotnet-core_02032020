@@ -46,7 +46,6 @@ const calcStore = createStore(calcReducer);
 calcStore.subscribe(() => {
 
   // re-render of the component
-
   console.log(calcStore.getState());
 
 });
@@ -54,8 +53,45 @@ calcStore.subscribe(() => {
 const createAddAction = (value) => ({ type: ADD_ACTION, payload: value });
 const createSubtractAction = (value) => ({ type: SUBTRACT_ACTION, payload: value });
 
+// placed inside event handlers within the component
 calcStore.dispatch(createAddAction(1));
 calcStore.dispatch(createSubtractAction(2));
+
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+
+// let counter = 0;
+
+// // no existing tree, create new
+// ReactDOM.render(<div>{counter}</div>, document.getElementById('root'));
+
+// counter++;
+
+// // oh look, I have tree, let's up it
+// ReactDOM.render(<div>{counter}</div>, document.getElementById('root'));
+
+
+// Lab Exercise
+
+/*
+
+1. Create a new component called Calc Tool. In the Calc Tool component, display the following:
+
+
+
+
+
+
+
+
+
+
+
+2. Connect the Calc Tool component to the Redux store. Remember all state (except for typing into an input field) must be managed in Redux.
+
+
+
+*/
 
 
 
