@@ -1,26 +1,62 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
 
-// import { ColorTool } from './components/ColorTool';
-import { CarTool } from './components/CarTool';
+const ADD_ACTION = 'ADD';
+const SUBTRACT_ACTION = 'SUBTRACT';
 
-// const colorList = [
-//     { id: 1, name: 'red' },
-//     { id: 2, name: 'white' },
-//     { id: 3, name: 'blue' },
-//     { id: 4, name: 'black' },
-// ];
+const initialCalcReducerState = { result: 0 };
 
-const carList = [
-    { id: 1, make: 'Ford', model: 'Fusion Hybrid', year: 2018, color: 'blue', price: 45000 },
-    { id: 2, make: 'Tesla', model: 'S', year: 2019, color: 'red', price: 100000 },
-];
+const calcReducer = (state = initialCalcReducerState, currentAction) => {
 
-ReactDOM.render(
-    <>
-        {/* <ColorTool colors={colorList} /> */}
-        <CarTool cars={carList} />
-    </>,
-    document.querySelector('#root'),
-);
+  switch (currentAction.type) {
+    case ADD_ACTION:
+      return {
+        ...state,
+        result: state.result + currentAction.payload,
+      };
+    case SUBTRACT_ACTION:
+      return {
+        ...state,
+        result: state.result - currentAction.payload,
+      };
+    default:
+      return state;
+  }
+
+};
+
+
+// const createStore = (reducerFn) => {
+
+//   let currentState = undefined;
+//   const callbackFns = [];
+
+//   return {
+//     getState: () => currentState,
+//     subscribe: (callbackFn) => callbackFns.push(callbackFn),
+//     dispatch: (action) => {
+//       currentState = reducerFn(currentState, action);
+//       callbackFns.forEach(cb => cb());
+//     },
+//   };
+
+// };
+
+const calcStore = createStore(calcReducer);
+
+calcStore.subscribe(() => {
+
+  // re-render of the component
+
+  console.log(calcStore.getState());
+
+});
+
+const createAddAction = (value) => ({ type: ADD_ACTION, payload: value });
+const createSubtractAction = (value) => ({ type: SUBTRACT_ACTION, payload: value });
+
+calcStore.dispatch(createAddAction(1));
+calcStore.dispatch(createSubtractAction(2));
+
+
+
 
