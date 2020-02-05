@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, forwardRef } from 'react';
 
-export const CarForm = ({ buttonText, onSubmitCar }) => {
+export const CarForm = forwardRef(({ buttonText, onSubmitCar }, ref) => {
 
   const [carForm, setCarForm] = useState({
     make: '', model: '', year: 1900, color: '', price: 0,
@@ -30,7 +30,7 @@ export const CarForm = ({ buttonText, onSubmitCar }) => {
     <div>
       <label htmlFor="make-input">Make:</label>
       <input type="text" id="make-input" name="make"
-        value={carForm.make} onChange={change} />
+        value={carForm.make} onChange={change} ref={ref} />
     </div>
     <div>
       <label htmlFor="model-input">Model:</label>
@@ -56,4 +56,4 @@ export const CarForm = ({ buttonText, onSubmitCar }) => {
     <button type="button" onClick={submitCar}>{buttonText}</button>
   </form>;
 
-};
+});

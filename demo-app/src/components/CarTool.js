@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 import { ToolHeader } from './ToolHeader';
 import { CarTable } from './CarTable';
@@ -9,6 +9,16 @@ export const CarTool = (props) => {
   const [cars, setCars] = useState(props.cars.concat());
 
   const [ editCarId, setEditCarId ] = useState(-1);
+
+  const defaultControlFocusRef = useRef(null);
+
+  useEffect(function sideEffect() {
+
+    if (defaultControlFocusRef.current) {
+      defaultControlFocusRef.current.focus();
+    }
+
+  }, []);
 
   const addCar = (car) => {
 
@@ -44,7 +54,7 @@ export const CarTool = (props) => {
       <CarTable cars={cars} editCarId={editCarId}
         onEditCar={editCar} onDeleteCar={deleteCar}
         onSaveCar={replaceCar} onCancelCar={() => setEditCarId(-1)}  />
-      <CarForm buttonText="Add Car" onSubmitCar={addCar} />
+      <CarForm buttonText="Add Car" onSubmitCar={addCar} ref={defaultControlFocusRef} />
     </>
   );
 
