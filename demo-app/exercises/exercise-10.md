@@ -1,4 +1,4 @@
-# Exercise 9
+# Exercise 10
 
 GitHub [https://github.com/t4d-classes/react-redux-dotnet-core_02032020](https://github.com/t4d-classes/react-redux-dotnet-core_02032020)
 
