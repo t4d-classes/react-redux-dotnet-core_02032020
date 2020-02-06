@@ -3,3 +3,9 @@ C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.
 C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Data\obj\Debug\netstandard2.0\CarToolApp.Data.csprojAssemblyReference.cache
 C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Data\obj\Debug\netstandard2.0\CarToolApp.Data.AssemblyInfoInputs.cache
 C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Data\obj\Debug\netstandard2.0\CarToolApp.Data.AssemblyInfo.cs
+C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Data\bin\Debug\netstandard2.0\CarToolApp.Data.pdb
+C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Data\bin\Debug\netstandard2.0\CarToolApp.Model.dll
+C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Data\bin\Debug\netstandard2.0\CarToolApp.Model.pdb
+C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Data\obj\Debug\netstandard2.0\CarToolApp.Data.csproj.CopyComplete
+C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Data\obj\Debug\netstandard2.0\CarToolApp.Data.dll
+C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Data\obj\Debug\netstandard2.0\CarToolApp.Data.pdb

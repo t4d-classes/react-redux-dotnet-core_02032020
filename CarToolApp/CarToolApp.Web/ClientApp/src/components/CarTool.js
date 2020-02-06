@@ -6,7 +6,9 @@ import { CarForm } from './CarForm';
 
 export const CarTool = ({
   cars,
+  siteInfo,
   onAppendCar: appendCar,
+  onRefreshSiteInfo: refreshSiteInfo,
 }) => {
 
   const defaultControlFocusRef = useRef(null);
@@ -17,11 +19,13 @@ export const CarTool = ({
       defaultControlFocusRef.current.focus();
     }
 
+    refreshSiteInfo();
+
   }, []);
 
   return (
     <>
-      <ToolHeader headerText="Car Tool" />
+      <ToolHeader headerText={siteInfo.siteName} />
       <CarTable cars={cars} />
       <CarForm buttonText="Add Car" onSubmitCar={appendCar} ref={defaultControlFocusRef} />
     </>

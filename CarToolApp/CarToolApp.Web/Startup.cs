@@ -6,6 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+using CarToolApp.Web.Services;
+
 namespace CarToolApp.Web
 {
     public class Startup
@@ -20,6 +22,7 @@ namespace CarToolApp.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<SiteInfo>();
 
             services.AddControllersWithViews();
 

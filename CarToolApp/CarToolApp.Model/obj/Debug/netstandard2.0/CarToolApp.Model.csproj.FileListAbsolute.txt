@@ -1,0 +1,8 @@
+C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Model\bin\Debug\netstandard2.0\CarToolApp.Model.deps.json
+C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Model\bin\Debug\netstandard2.0\CarToolApp.Model.dll
+C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Model\bin\Debug\netstandard2.0\CarToolApp.Model.pdb
+C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Model\obj\Debug\netstandard2.0\CarToolApp.Model.csprojAssemblyReference.cache
+C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Model\obj\Debug\netstandard2.0\CarToolApp.Model.AssemblyInfoInputs.cache
+C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Model\obj\Debug\netstandard2.0\CarToolApp.Model.AssemblyInfo.cs
+C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Model\obj\Debug\netstandard2.0\CarToolApp.Model.dll
+C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Model\obj\Debug\netstandard2.0\CarToolApp.Model.pdb

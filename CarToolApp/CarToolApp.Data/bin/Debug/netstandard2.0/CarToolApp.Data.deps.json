@@ -9,11 +9,25 @@
     ".NETStandard,Version=v2.0/": {
       "CarToolApp.Data/1.0.0": {
         "dependencies": {
+          "AutoMapper": "9.0.0",
+          "CarToolApp.Model": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.1",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
           "CarToolApp.Data.dll": {}
+        }
+      },
+      "AutoMapper/9.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
+          }
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
@@ -1239,6 +1253,11 @@
             "fileVersion": "4.6.24705.1"
           }
         }
+      },
+      "CarToolApp.Model/1.0.0": {
+        "runtime": {
+          "CarToolApp.Model.dll": {}
+        }
       }
     }
   },
@@ -1247,6 +1266,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xCqvoxT4HIrNY/xlXG9W+BA/awdrhWvMTKTK/igkGSRbhOhpl3Q8O8Gxlhzjc9JsYqE7sS6AxgyuUUvZ6R5/Bw==",
+      "path": "automapper/9.0.0",
+      "hashPath": "automapper.9.0.0.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
       "type": "package",
@@ -2031,6 +2057,11 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "CarToolApp.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

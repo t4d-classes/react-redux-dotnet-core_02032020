@@ -1,0 +1,7 @@
+
+
+GET https://localhost:5001/api/siteinfo HTTP/1.1
+
+###
+
+
