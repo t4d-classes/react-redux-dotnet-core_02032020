@@ -25,6 +25,9 @@ export const CarTable = ({
       </tr>
     </thead>
     <tbody>
+      {!cars.length && <tr>
+        <td colSpan="7">There are no cars.</td>
+      </tr>}
       {cars.map(car => car.id === editCarId
         ? <CarEditRow key={car.id} car={car}
             onSaveCar={saveCar} onCancelCar={cancelCar} />
