@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CarToolApp.Core\CarToolApp.Core.csproj" />
     <ProjectReference Include="..\CarToolApp.Model\CarToolApp.Model.csproj" />
   </ItemGroup>
 

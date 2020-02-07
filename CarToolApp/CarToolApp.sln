@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarToolApp.Web", "CarToolApp.Web\CarToolApp.Web.csproj", "{1F3902DE-B5F8-460A-B809-594B8AA23F18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarToolApp.Data", "CarToolApp.Data\CarToolApp.Data.csproj", "{5A619832-3ECE-4135-95B3-0F3B9818C3FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarToolApp.Data", "CarToolApp.Data\CarToolApp.Data.csproj", "{5A619832-3ECE-4135-95B3-0F3B9818C3FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarToolApp.Model", "CarToolApp.Model\CarToolApp.Model.csproj", "{7739E08A-26AF-4A64-90F9-FBB9B4C1569A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarToolApp.Model", "CarToolApp.Model\CarToolApp.Model.csproj", "{7739E08A-26AF-4A64-90F9-FBB9B4C1569A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarToolApp.Core", "CarToolApp.Core\CarToolApp.Core.csproj", "{1D1DB4FD-C17C-4453-BFEB-BDBD1228CC0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,18 @@ Global
 		{7739E08A-26AF-4A64-90F9-FBB9B4C1569A}.Release|x64.Build.0 = Release|Any CPU
 		{7739E08A-26AF-4A64-90F9-FBB9B4C1569A}.Release|x86.ActiveCfg = Release|Any CPU
 		{7739E08A-26AF-4A64-90F9-FBB9B4C1569A}.Release|x86.Build.0 = Release|Any CPU
+		{1D1DB4FD-C17C-4453-BFEB-BDBD1228CC0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1DB4FD-C17C-4453-BFEB-BDBD1228CC0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1DB4FD-C17C-4453-BFEB-BDBD1228CC0F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1D1DB4FD-C17C-4453-BFEB-BDBD1228CC0F}.Debug|x64.Build.0 = Debug|Any CPU
+		{1D1DB4FD-C17C-4453-BFEB-BDBD1228CC0F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1D1DB4FD-C17C-4453-BFEB-BDBD1228CC0F}.Debug|x86.Build.0 = Debug|Any CPU
+		{1D1DB4FD-C17C-4453-BFEB-BDBD1228CC0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1DB4FD-C17C-4453-BFEB-BDBD1228CC0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D1DB4FD-C17C-4453-BFEB-BDBD1228CC0F}.Release|x64.ActiveCfg = Release|Any CPU
+		{1D1DB4FD-C17C-4453-BFEB-BDBD1228CC0F}.Release|x64.Build.0 = Release|Any CPU
+		{1D1DB4FD-C17C-4453-BFEB-BDBD1228CC0F}.Release|x86.ActiveCfg = Release|Any CPU
+		{1D1DB4FD-C17C-4453-BFEB-BDBD1228CC0F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

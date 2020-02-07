@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import { APPEND_CAR_ACTION, REFRESH_SITE_INFO_DONE_ACTION } from '../actions/carToolActions';
+import { APPEND_CAR_ACTION, REFRESH_SITE_INFO_DONE_ACTION, REFRESH_CARS_DONE_ACTION } from '../actions/carToolActions';
 
 const siteInfoReducer = (siteInfo = {}, action) => {
 
@@ -13,6 +13,10 @@ const siteInfoReducer = (siteInfo = {}, action) => {
 
 
 const carsReducer = (cars = [], action) => {
+
+  if (action.type === REFRESH_CARS_DONE_ACTION) {
+    return action.payload.cars;
+  }
 
   if (APPEND_CAR_ACTION === action.type) {
     return cars.concat({

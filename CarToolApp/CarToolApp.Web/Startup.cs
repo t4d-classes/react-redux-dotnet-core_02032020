@@ -7,6 +7,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 using CarToolApp.Web.Services;
+using CarToolApp.Data;
+using Microsoft.EntityFrameworkCore;
+using CarToolApp.Core;
 
 namespace CarToolApp.Web
 {
@@ -22,7 +25,13 @@ namespace CarToolApp.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<CarToolContext>(options =>
+            {
+              options.UseSqlServer(Configuration["CONNECTION_STRING"]);
+            });
+
             services.AddSingleton<SiteInfo>();
+            services.AddScoped<ICarsData, CarsData>();
 
             services.AddControllersWithViews();
 

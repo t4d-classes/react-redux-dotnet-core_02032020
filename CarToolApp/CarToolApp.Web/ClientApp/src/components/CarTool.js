@@ -9,6 +9,7 @@ export const CarTool = ({
   siteInfo,
   onAppendCar: appendCar,
   onRefreshSiteInfo: refreshSiteInfo,
+  onRefreshCars: refreshCars,
 }) => {
 
   const defaultControlFocusRef = useRef(null);
@@ -20,6 +21,8 @@ export const CarTool = ({
     }
 
     refreshSiteInfo();
+
+    refreshCars();
 
   }, []);
 

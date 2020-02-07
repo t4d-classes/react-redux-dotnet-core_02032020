@@ -3,12 +3,13 @@ import { bindActionCreators } from 'redux';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { CarTool } from '../components/CarTool';
-import { createAppendCarAction, refreshSiteInfo } from '../actions/carToolActions';
+import { createAppendCarAction, refreshSiteInfo, refreshCars } from '../actions/carToolActions';
 
 export const CarToolContainer = () => {
 
   const actions = bindActionCreators({
     onAppendCar: createAppendCarAction,
+    onRefreshCars:  refreshCars,
     onRefreshSiteInfo: refreshSiteInfo,
   }, useDispatch());
 

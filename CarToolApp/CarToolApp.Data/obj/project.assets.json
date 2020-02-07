@@ -1705,6 +1705,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "CarToolApp.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "CarToolApp.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CarToolApp.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CarToolApp.Core.dll": {}
+        }
+      },
       "CarToolApp.Model/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -6204,6 +6217,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "CarToolApp.Core/1.0.0": {
+      "type": "project",
+      "path": "../CarToolApp.Core/CarToolApp.Core.csproj",
+      "msbuildProject": "../CarToolApp.Core/CarToolApp.Core.csproj"
+    },
     "CarToolApp.Model/1.0.0": {
       "type": "project",
       "path": "../CarToolApp.Model/CarToolApp.Model.csproj",
@@ -6213,6 +6231,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "AutoMapper >= 9.0.0",
+      "CarToolApp.Core >= 1.0.0",
       "CarToolApp.Model >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.1",
       "NETStandard.Library >= 2.0.3"
@@ -6244,6 +6263,9 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
+            "C:\\Users\\ericwgreene\\git\\react-redux-dotnet-core_02032020\\CarToolApp\\CarToolApp.Core\\CarToolApp.Core.csproj": {
+              "projectPath": "C:\\Users\\ericwgreene\\git\\react-redux-dotnet-core_02032020\\CarToolApp\\CarToolApp.Core\\CarToolApp.Core.csproj"
+            },
             "C:\\Users\\ericwgreene\\git\\react-redux-dotnet-core_02032020\\CarToolApp\\CarToolApp.Model\\CarToolApp.Model.csproj": {
               "projectPath": "C:\\Users\\ericwgreene\\git\\react-redux-dotnet-core_02032020\\CarToolApp\\CarToolApp.Model\\CarToolApp.Model.csproj"
             }

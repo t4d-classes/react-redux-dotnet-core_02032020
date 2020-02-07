@@ -7,6 +7,7 @@
     <IsPackable>false</IsPackable>
     <SpaRoot>ClientApp\</SpaRoot>
     <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+    <UserSecretsId>10624717-8e03-435b-b397-09ccd02a44c1</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CarToolApp.Core\CarToolApp.Core.csproj" />
     <ProjectReference Include="..\CarToolApp.Data\CarToolApp.Data.csproj" />
     <ProjectReference Include="..\CarToolApp.Model\CarToolApp.Model.csproj" />
   </ItemGroup>

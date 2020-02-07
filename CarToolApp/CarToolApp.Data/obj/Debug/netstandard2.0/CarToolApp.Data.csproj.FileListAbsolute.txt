@@ -9,3 +9,5 @@ C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.
 C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Data\obj\Debug\netstandard2.0\CarToolApp.Data.csproj.CopyComplete
 C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Data\obj\Debug\netstandard2.0\CarToolApp.Data.dll
 C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Data\obj\Debug\netstandard2.0\CarToolApp.Data.pdb
+C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Data\bin\Debug\netstandard2.0\CarToolApp.Core.dll
+C:\Users\ericwgreene\git\react-redux-dotnet-core_02032020\CarToolApp\CarToolApp.Data\bin\Debug\netstandard2.0\CarToolApp.Core.pdb
