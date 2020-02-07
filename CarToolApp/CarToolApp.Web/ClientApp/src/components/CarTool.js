@@ -8,6 +8,7 @@ export const CarTool = ({
   cars,
   siteInfo,
   onAppendCar: appendCar,
+  onDeleteCar: deleteCar,
   onRefreshSiteInfo: refreshSiteInfo,
   onRefreshCars: refreshCars,
 }) => {
@@ -29,7 +30,7 @@ export const CarTool = ({
   return (
     <>
       <ToolHeader headerText={siteInfo.siteName} />
-      <CarTable cars={cars} />
+      <CarTable cars={cars} onDeleteCar={deleteCar} />
       <CarForm buttonText="Add Car" onSubmitCar={appendCar} ref={defaultControlFocusRef} />
     </>
   );

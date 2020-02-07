@@ -37,8 +37,9 @@ namespace CarToolApp.Web.Controllers
 
         // POST: api/Cars
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<Car> Post(Car car)
         {
+          return await _carsData.Append(car);
         }
 
         // PUT: api/Cars/5
@@ -49,8 +50,9 @@ namespace CarToolApp.Web.Controllers
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<Car> Delete(int id)
         {
+          return await _carsData.Delete(id);
         }
     }
 }

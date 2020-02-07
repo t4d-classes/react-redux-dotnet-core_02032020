@@ -45,5 +45,15 @@ namespace CarToolApp.Data
       return _mapper.Map<CarData, CarModel>(carData);
     }
 
+    public async Task<CarModel> Delete(long carId)
+    {
+      var car = await _context.Cars.FindAsync(carId);
+
+      _context.Cars.Remove(car);
+      await _context.SaveChangesAsync();
+
+      return _mapper.Map<CarData, CarModel>(car);
+    }
+
   }
 }

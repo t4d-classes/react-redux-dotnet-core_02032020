@@ -18,13 +18,6 @@ const carsReducer = (cars = [], action) => {
     return action.payload.cars;
   }
 
-  if (APPEND_CAR_ACTION === action.type) {
-    return cars.concat({
-      ...action.payload.car,
-      id: Math.max(...cars.map(c => c.id), 0) + 1,
-    });
-  }
-
   return cars;
 
 };

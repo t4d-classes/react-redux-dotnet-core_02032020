@@ -11,5 +11,6 @@ namespace CarToolApp.Core
   {
     Task<IEnumerable<CarModel>> All();
     Task<CarModel> Append(CarModel car);
+    Task<CarModel> Delete(long carId);
   }
 }
